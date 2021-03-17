@@ -1,0 +1,55 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+.draw-area {
+  background-color: #eeeeee;
+  min-width: 640px;
+  max-width: 800px;
+  min-height: 480px;
+  max-height: 800px;
+  border: 10px solid #999999;
+  position: relative;
+  overflow: scroll; }
+  .draw-area svg {
+    fill: none;
+    stroke: green;
+    stroke-width: 3; }
+  .draw-area .tree-node {
+    background-color: #528CE0;
+    width: 130px;
+    height: 30px;
+    position: absolute !important;
+    left: 100px;
+    top: 10px;
+    font: normal 12px Arial;
+    cursor: move;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .draw-area .tree-node * {
+      height: inherit;
+      width: inherit; }
+    .draw-area .tree-node p {
+      display: table-cell;
+      vertical-align: middle; }
+    .draw-area .tree-node input {
+      width: calc(70% - 2px);
+      height: calc(100% - 2px);
+      padding: 0;
+      border: 1px solid silver; }
+    .draw-area .tree-node button {
+      width: 30%;
+      height: 100%;
+      padding: 0;
+      border: 1px solid silver; }
+    .draw-area .tree-node img {
+      width: 32px;
+      float: left; }
+
+/*# sourceMappingURL=app.css.map */

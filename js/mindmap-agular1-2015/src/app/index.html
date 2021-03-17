@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mindMapApp" ng-strict-di>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../libraries/normalize-css/normalize.css">
+    <link rel="stylesheet" href="../libraries/jquery-contextMenu/jquery.contextMenu.min.css">
+
+    <link rel="stylesheet" href="content/styles/app.css" class="src-only">
+    <title ng-bind="title">app</title>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#/about">Описание функционала</a></li>
+        <li><a href="#/mindmap">Mind map</a></li>
+    </ul>
+    <div ng-view></div>
+
+    <script src="../libraries/jquery/jquery.js"></script>
+    <script src="../libraries/jquery-ui/jquery-ui.js"></script>
+    <script src="../libraries/pathseg/pathseg.js"></script>
+    <script src="../libraries/svgjs/svg.min.js"></script>
+    <script src="../libraries/svgjs/svg.path.min.js"></script>
+    <script src="../libraries/angular/angular.js"></script>
+    <script src="../libraries/angular-route/angular-route.js"></script>
+    <script src="../libraries/jquery-contextMenu/jquery.contextMenu.min.js"></script>
+
+    <script src="tree/node-views/base-node-view-compiled.js" class="src-only"></script>
+    <script src="tree/node-views/text-node-view-compiled.js" class="src-only"></script>
+    <script src="tree/node-views/text-with-image-node-view-compiled.js" class="src-only"></script>
+    <script src="tree/node-models/node-model-compiled.js" class="src-only"></script>
+    <script src="tree/tree-node-compiled.js" class="src-only"></script>
+    <script src="tree/tree-compiled.js"></script>
+    <script src="tree/connections/tree-connections-controller-compiled.js"></script>
+    <script src="tree/connections/tree-svg-connections-controller-compiled.js"></script>
+
+    <script src="app-compiled.js"></script>
+    <script src="directives/draggable/jq-draggable-compiled.js"></script>
+    <script src="tree/tree-node-view-factory-compiled.js"></script>
+    <script src="utils/dom-utils-service-compiled.js"></script>
+
+    <script src="views/about/about-ctrl-compiled.js"></script>
+    <script src="views/mindmap/mindmap-ctrl-compiled.js"></script>
+</body>
+</html>

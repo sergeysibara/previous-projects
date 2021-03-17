@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mindMapApp" ng-strict-di="">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../libraries/normalize-css/normalize.css">
+    <link rel="stylesheet" href="../libraries/jquery-contextMenu/jquery.contextMenu.min.css">
+    <title ng-bind="title">app</title>
+    <link rel="stylesheet" href="dist.css"></head>
+<body>
+    <ul class="menu">
+        <li><a href="#/about">Описание функционала</a></li>
+        <li><a href="#/mindmap">Mind map</a></li>
+    </ul>
+    <div ng-view=""></div>
+    <script src="../libraries/jquery/jquery.js"></script>
+    <script src="../libraries/jquery-ui/jquery-ui.js"></script>
+    <script src="../libraries/pathseg/pathseg.js"></script>
+    <script src="../libraries/svgjs/svg.min.js"></script>
+    <script src="../libraries/svgjs/svg.path.min.js"></script>
+    <script src="../libraries/angular/angular.js"></script>
+    <script src="../libraries/angular-route/angular-route.js"></script>
+    <script src="../libraries/jquery-contextMenu/jquery.contextMenu.min.js"></script>
+    <script src="dist.js"></script></body>
+</html>
